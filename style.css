@@ -1,0 +1,19 @@
+.parent{
+  max-width: 480px;
+  margin: auto;
+  border: 1px solid black;
+  text-align: center;
+   /* display: flex;
+   flex-direction: column;
+   text-align: center;
+   justify-content: center; */
+}
+
+.parent>img {
+  width: 200px;
+  /* display: flex;
+  text-align: center;
+  justify-content: center; */
+  /* border-radius: 8px; */
+  
+}
