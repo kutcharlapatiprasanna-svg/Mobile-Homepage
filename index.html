@@ -11,70 +11,79 @@
         type="image/x-icon">
     <link rel="icon" type="image/png" href="C:\Users\prasa\Downloads\wheelchair.jpg">
     <!-- <link rel="icon" type="image/png" href="img/wheelchair.jpg"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-   <div class="silver" style="max-width: 480px; margin: auto; border: 1px solid black;">
-        <!-- box-1 -->
-        <div class="box-1">
-            <h1>Silver Sport 2 Wheelchair</h1>
-            <img src="img/wheelchair.jpg" alt="Wheelchair">
-            <h4>$262.23</h4>
+    <!-- box-1 -->
+    <div class="box-1">
+        <h1 class="heading-1">Silver Sport 2 Wheelchair</h1>
+        <div class="wheelchair-img">
+            <img class="box-1Img" src="img/wheelchair.jpg" alt="Wheelchair">
+        </div>
+        <h4 class="heading-2">$262.23</h4>
+
+        <div class="items-space">
             <p>Item # SSP218DDA-ELR</p>
-            <p>UPC # 8223831460414</p>
-            <p>HCPCS # E4002</p>
-        </div>
-        <!-- box-2-->
-        <div class="box-2">
-            <div class="color-types">
-                <h5> Color</h5>
-                <input type="radio" id="red" name="color" value="red">
-                <label for="red" class="color-red"></label>
-
-                <input type="radio" id="blue" name="color" value="blue">
-                <label for="blue" class="color-blue"></label>
-
-                <input type="radio" id="black" name="color" value="black">
-                <label for="black" class="color-black"></label>
-            </div>
-            <div class="button-types">
-                <h4>Seat Size</h4>
-                <button type="button">16"</button>
-                <button type="button">18"</button>
-                <button type="button">20"</button>
-            </div>
-            <div class="arm-type">
-                <h4>Arm Style </h4>
-                <button type="button">Desk</button>
-                <button type="button">Full</button>
-            </div>
-            <div class="front-type">
-                <h4>Front Rigging</h4>
-                <button type="button">Footrests</button>
-                <button type="button">Legrests</button>
+            <div class="icons">
+`                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-share-nodes"></i>
             </div>
         </div>
-        <!-- box-3 -->
-        <div>
-            <h2 class="price">$262.23 <span class="stock">In Stock</span></h2>
-            <p>Deliver to <a href="#">Chris - Huntington 11743</a></p>
-            <p>Est Delivery Date: <span class="delivery-date">11/10/24</span></p>
-            <button class="add-to-cart">Add to Cart</button>
+        <div class="upc">
+            <span class="upc-1">UPC # 822383140414</span>
+            <span class="upc-2">HCPCS # E4002</span>
         </div>
-        <!-- box-4--->
-         <div class="final-box">
-            <p> Product Options</p>
-            <p>Features</p>
-            <p>Specifications</p>
-            <p>Resources/Downloads</p>
-            <p>Accessories</p>
 
-         </div>
+        <!-- <i class="fa-solid fa-angle-left"></i>
+            <i class="fa-regular fa-heart"></i> -->
+    </div>
+    <!-- box-2-->
+    <div class="box-2">
+        <h5 class="heading-3">Color</h5>
+        <div class="color-types">
+            <button type="button" class="color-1"></button>
+            <button type="button" class="color-2"></button>
+            <button type="button" class="color-3"></button>
+        </div>
+        <div class="button-types">
+            <h4>Seat Size</h4>
+            <button type="button">16"</button>
+            <button type="button">18"</button>
+            <button type="button">20"</button>
+        </div>
+        <div class="arm-type">
+            <h4>Arm Style </h4>
+            <button type="button">Desk</button>
+            <button type="button">Full</button>
+        </div>
+        <div class="front-type">
+            <h4>Front Rigging</h4>
+            <button type="button">Footrests</button>
+            <button type="button">Legrests</button>
+        </div>
 
     </div>
-</body>
+    <!-- box-3 -->
+    <div>
+        <h2 class="price">$262.23 <span class="stock">In Stock</span></h2>
+        <p>Deliver to <a href="#">Chris - Huntington 11743</a></p>
+        <p>Est Delivery Date: <span class="delivery-date">11/10/24</span></p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <!-- box-4--->
+    <div class="final-box">
+        <p> Product Options</p>
+        <p>Features</p>
+        <p>Specifications</p>
+        <p>Resources/Downloads</p>
+        <p>Accessories</p>
+    </div>
 
+</body>
 
 </html>
