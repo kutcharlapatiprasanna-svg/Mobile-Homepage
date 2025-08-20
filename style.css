@@ -1,7 +1,8 @@
-*{
+* {
   padding: 0px;
   margin: 0px;
 }
+
 @media screen and (max-width:1024px) {}
 
 @media screen and (max-width:768px) {}
@@ -75,52 +76,62 @@
   .box-2 {
     background-color: #f4f4f4;
     border: 2px solid black;
-    
+    padding: 10px 20px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+
+
 
   }
-  .heading-3{
+
+  .heading-3 {
     /* margin: 20px 0; */
-     padding: 20px;
-     font-size: 30px;
-     /* margin-bottom: 20px; */
-     margin-bottom: 5px;
-     border: 2px sold greenyellow;
+    padding: 20px;
+    font-size: 30px;
+    /* margin-bottom: 20px; */
+    margin-bottom: 5px;
+
   }
 
   .color-types {
-    padding: 20px ;
+    /* padding: 20px; */
     display: flex;
     align-items: center;
     gap: 30px;
-    padding-top: 5px;
-    /* margin: 0px; */
-    padding: 15px;
-    /* border: 2px solid red; */
+    padding-left: 20px;
+    padding-top: 0px;
+    border: 10px slid blue;
+    /* padding: 10px 20px; */
+    /* width: 40px;
+    height: 40px; */
+
   }
 
   .color-1 {
     width: 40px;
-    height: 40px; 
+    height: 40px;
     border-radius: 50%;
-    border: none;
+    /* border: none; */
     background-color: blue;
     margin-top: 6px;
-    padding-top:5px;
+    padding: 10px 20px;
+    border: #f4f4f4;
+
 
   }
 
-    .color-2 {
+  .color-2 {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: none;
+    /* border: none; */
     margin: 2px;
     cursor: pointer;
     background-color: black;
 
   }
 
-    .color-3 {
+  .color-3 {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -131,9 +142,164 @@
 
   }
 
+  .size {
+    padding: 20px;
+    font-size: 30px;
+    margin-bottom: 5px;
+    /* margin-top: 0px; */
+  }
+
+  .button-types {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    gap: 30px;
+    padding-top: 0px;
+    /* margin: 4px 2px; */
 
 
+  }
 
+  .button-1 {
+    border-radius: 30px;
+    padding: 10px 32px;
+    border: 2px solid violet;
+    /* padding-top: 0px; */
+    /* font-size: ; */
+
+  }
+
+  .button-2 {
+    border-radius: 30px;
+    padding: 10px 32px;
+    border: 2px solid violet;
+
+  }
+
+  .button-3 {
+    border-radius: 30px;
+    padding: 10px 32px;
+    border: 2px solid violet;
+
+  }
+
+  .arm-style-heading {
+    padding: 20px;
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+
+  .arm-type {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    gap: 30px;
+    padding-top: 0px;
+    /* margin: 4px 2px; */
+  }
+
+  .button-4 {
+    border-radius: 30px;
+    padding: 10px 60px;
+    border: 2px solid violet;
+  }
+
+  .button-5 {
+    border-radius: 30px;
+    padding: 10px 60px;
+    border: 2px solid violet;
+  }
+
+  .rigging {
+    padding: 20px;
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+
+  .front-type {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    gap: 30px;
+    padding-top: 0px;
+  }
+
+  .button-6 {
+    border-radius: 30px;
+    padding: 10px 45px;
+    border: 2px solid violet;
+  }
+
+  .button-7 {
+    border-radius: 30px;
+    padding: 10px 45px;
+    border: 2px solid violet;
+  }
+
+  .final-box {
+    background-color: white;
+    border: 2px solid orange;
+  }
+
+  .stock-1 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    padding: 10px 30px;
+    padding-left: 35px;
+
+  }
+
+  .deliver-style {
+    display: flex;
+    flex-direction: column;
+    /* gap: 5px; */
+    padding: 10px 30px;
+    font-size: 25px;
+
+  }
+
+  .final-one {
+    display: flex;
+    /* flex-direction: column;
+    align-items: flex-start; */
+    /* line-height: 1.2; */
+    align-items: center;
+
+  }
+
+  .est-del {
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    font-size: 25px;
+    /* justify-content:space-evenly; */
+  }
+
+  .last-astage-styling {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border-radius: 10px; */
+    padding: 10px 10px;
+    gap: 20px;
+  }
+
+  .button-9 {
+    border-radius: 10px;
+    padding: 10px 50px;
+    border: 2px solid violet;
+
+  }
+   
+  .forms select{
+     /* padding: 30px 60px; */
+     border-radius: 10px;
+    padding: 10px 20px;
+
+
+    
+  }
 
 
 }
