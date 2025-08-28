@@ -626,23 +626,20 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-     
+
   }
 
-  .down-1{
-    
-    margin-left: 200px;
-    margin-bottom:10px;
-    margin-right: 900px;
-    padding-left: 50px;
+  .down-1 {
 
-    
+    margin-right: 30px;
+
+
   }
 
-  .point{
-    
-    margin-left: 40px;
-    margin-bottom: 10px;
+  .point {
+
+    margin-left: 60px;
+    margin-bottom: 0px;
   }
 
 
@@ -652,19 +649,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
-    /* width: 350px; */
-    width: 350px;
-    margin-left: 90px;
+    gap: 10px;
 
+    width: 120px;
 
+    padding: 10px 60px;
+    margin-left: 70px
   }
+
+
 
   .arrow-left {
     background: none;
     border: none;
     color: #007bff;
-    margin-left: 10px;
+    /* margin-left: 10px; */
+    padding: 0px;
     /* margin-left: 40px; */
   }
 
@@ -674,16 +674,18 @@
     border: 1px solid green;
     border-radius: 20px;
     margin-bottom: 10px;
-     
+    /* width: 150px; */
+
 
 
   }
 
-  
+
 
   .product-card img {
-    width: 150px;
+    width: 90px;
     padding: 10px;
+    /* align-items: center; */
     /* width: 150px; */
 
   }
@@ -738,13 +740,13 @@
     background: none;
     border: none;
     color: #007bff;
-    margin-right:100px;
+
   }
 
 
   .view {
     align-items: center;
-    margin-left: 120px;
+    margin-left: 90px;
     color: #007bff;
     margin-top: 10px;
     font-size: 20px;
@@ -784,12 +786,14 @@
   .second-container {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
-    gap: 20px;
-    padding: 20px ;
-    /* width: 250px; */
-    width: 270px;
-    /* width: 390px; */
+    gap: 10px;
+    padding: 20px;
+
+    /* width: 170px; */
+    padding: 10px 20px;
+
+    /* margin-left: 70px; */
+    margin-right: 500px;
 
   }
 
@@ -797,27 +801,27 @@
     background: none;
     border: none;
     color: #007bff;
+    margin-left: 0px;
+    /* padding-left: 90px; */
+    /* padding-right: 90px; */
 
-    /* padding: 20px; */
   }
 
   .chairs-card {
     border: 2px solid gray;
     border-radius: 20px;
-    /* margin-bottom: 30px; */
-    /* margin-right: 90px; */
-    /* padding-left: 20px; */
-    /* width: 150px; */
+    /* width: 4000px; */
+
+
+
   }
 
   .chairs-card img {
-    /* width: 100%; */
-    /* width: 100px; */
-    /* border-bottom: 1px solid #ddd; */
+
     align-items: center;
-    width: 130px;
+    width: 100px;
     padding: 10px;
-     /* width: 200px; */
+    /* width: 200px; */
 
     /* margin-bottom: 10px; */
     /* padding: 10px;
@@ -855,67 +859,90 @@
 
   .latest-one {
     border-radius: 5px;
-    width: 120px;
+    width: 100px;
     padding: 5px;
     margin-top: 10px;
-    margin-left: 12px;
+    margin-left: 22px;
     border-radius: 20px;
+    margin-right: 1px;
   }
 
-  .latest-two{
+  .latest-two {
+
     border-radius: 30px;
-    width: 120px;
     padding: 5px;
+    margin-right: 1px;
     margin-top: 10px;
-    margin-left: 12px;
+    margin-left: 25px;
+    width: 100px;
     background-color: #007bff;
     margin-bottom: 20px;
 
   }
 
 
-  /* .right-arrow{
-    margin-right: 300px;
-    padding: 30px;
-  }  */
+  .right-arrowsl {
 
+    background: none;
+    border: none;
+    color: #007bff;
+    /* padding: 10px 10px;
+    margin-right: 100px; */
+    /* margin-left: 300px; */
 
-  .settings-100{
+  }
+
+  .settings-100 {
     display: flex;
-    background-color:#f0f0f0;
+    background-color: #f0f0f0;
     justify-content: space-between;
   }
 
-  .settingss-90{
+  .settingss-90 {
     font-size: 90px;
     margin-bottom: 20px;
     margin-top: 40px;
     margin-left: 10px;
   }
 
-  .last-paragraph{
-    margin-top: 40px; 
+  .last-paragraph {
+    margin-top: 40px;
     font-size: 20px;
   }
 
 
-  .last-onebutton{
-    background-color:#f0f0f0 ;
-   margin-bottom: 80px;
+  .last-onebutton {
+    background-color: #f0f0f0;
+    /* margin-bottom: 80px; */
   }
 
 
 
-  .button{
+  .button {
     width: 300px;
     background-color: #007bff;
     border-radius: 20px;
     padding: 10px;
     display: flex;
     justify-content: center;
-    margin-left: 60px;
+    margin-left: 30px;
     border-bottom: 200px;
+    border: 2px solid #f0f0f0;
+
+
+
 
   }
+
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    /* stops horizontal shifting */
+  }
+
+
 
 }
