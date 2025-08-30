@@ -409,6 +409,11 @@
 
   .heading-100 {
     padding: 10px 30px;
+   margin-top: 30px;
+  }
+
+  #seat-10{
+    padding: 10px 30px;
   }
 
   #seat-100 {
@@ -433,11 +438,38 @@
   }
 
   .second-box1 {
-    width: 400px;
+    /* width: 400px; */
+    /* width: 360px;
     height: 180px;
-    border: 1px solid #333;
+    border: 1px solid red;
+    margin: 5px;
+    margin-left: 26px;
+    background-color: #f0f0f0; */
+    width: 310px;
+    /* height: 180px; */
+    border: 1px solid red;
+    margin: 5px;
+    margin-left: 20px;
     background-color: #f0f0f0;
+   
 
+
+
+
+  }
+
+  .heading-10{
+    margin-left:2px;
+    margin-top: 15px;
+  }
+
+  #seat-100{
+    margin-left:9px;
+  }
+
+  .para-200{
+    margin-left:0px;
+    
   }
 
   .third-box {
@@ -446,9 +478,9 @@
 
   }
 
-  .heading-102 {
+  /* .heading-102 {
     padding: 30px;
-  }
+  } */
 
 
   .fourth-box {
