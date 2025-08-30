@@ -333,7 +333,7 @@
    
     padding: 10px 50px; */
 
-   
+
 
   }
 
@@ -409,10 +409,10 @@
 
   .heading-100 {
     padding: 10px 30px;
-   margin-top: 30px;
+    margin-top: 30px;
   }
 
-  #seat-10{
+  #seat-10 {
     padding: 10px 30px;
   }
 
@@ -451,25 +451,25 @@
     margin: 5px;
     margin-left: 20px;
     background-color: #f0f0f0;
-   
+
 
 
 
 
   }
 
-  .heading-10{
-    margin-left:2px;
+  .heading-10 {
+    margin-left: 2px;
     margin-top: 15px;
   }
 
-  #seat-100{
-    margin-left:9px;
+  #seat-100 {
+    margin-left: 9px;
   }
 
-  .para-200{
-    margin-left:0px;
-    
+  .para-200 {
+    margin-left: 0px;
+
   }
 
   .third-box {
@@ -528,10 +528,10 @@
     flex-direction: column;
     justify-content: center;
     list-style-type: disc;
-     margin-top: 10px;
+    margin-top: 10px;
     margin-bottom: 30px;
     padding-left: 20px;
-    
+
 
   }
 
@@ -678,7 +678,8 @@
 
   .down-1 {
 
-    margin-right: 30px;
+    margin-right: 70px;
+    margin-left: 10px;
 
 
   }
@@ -686,7 +687,8 @@
   .point {
 
     margin-left: 60px;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
+
   }
 
 
@@ -782,7 +784,7 @@
     margin-left: 9px;
     /* color: #007bff; */
     width: 120px;
-    background-color:#007bff;
+    background-color: #007bff;
     margin-bottom: 20px;
 
   }
@@ -819,8 +821,7 @@
 
   .paragrapgh-1 {
     margin-top: 20px;
-    /* padding: 20px; */
-    /* margin-left: 10px; */
+
     margin-left: 20px;
     margin-bottom: 10px;
 
@@ -829,8 +830,8 @@
 
   .up-arrow {
     margin-top: 20px;
-    margin-left:2px;
-    margin-right: 20px;
+    margin-left: 2px;
+    margin-right: 70px;
     margin-bottom: 10px;
 
 
@@ -845,7 +846,7 @@
 
     /* width: 170px; */
     padding: 10px 20px;
-       width: 120px;
+    width: 120px;
 
     /* margin-left: 70px; */
     margin-right: 500px;
@@ -865,7 +866,7 @@
   .chairs-card {
     border: 2px solid gray;
     border-radius: 20px;
-   
+
     /* width: 4000px; */
 
 
@@ -877,7 +878,7 @@
     align-items: center;
     width: 100px;
     padding: 10px;
-  
+
   }
 
 
@@ -938,17 +939,25 @@
     background: none;
     border: none;
     color: #007bff;
-   
+
     /* padding: 10px 10px;
     margin-right: 100px; */
     /* margin-left: 300px; */
 
   }
 
+  .settings- {
+    /* border: 2px solid red; */
+    /* margin-bottom: 20px; */
+    margin-top: 30px;
+    background-color: #f0f0f0;
+  }
+
   .settings-100 {
     display: flex;
-    background-color: #f0f0f0;
+    /* background-color: #f0f0f0; */
     justify-content: space-between;
+    /* border: 2px solid red ; */
   }
 
   .settingss-90 {
@@ -976,9 +985,10 @@
     background-color: #007bff;
     border-radius: 20px;
     padding: 10px;
-     margin-left: 30px;
+    margin-left: 30px;
     border-bottom: 200px;
     border: 2px solid #f0f0f0;
+    margin-bottom: 50px;
 
 
 
@@ -992,7 +1002,7 @@
     width: 100%;
     overflow-x: hidden;
     /* stops horizontal shifting */
-  } 
+  }
 
 
 
