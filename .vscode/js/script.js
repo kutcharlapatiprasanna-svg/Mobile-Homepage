@@ -360,3 +360,78 @@ read(function () {
 // foreach ---> we are function in side the foreach only not anymore.
 
 // def:: it is used to just iterate on the entire array and it returns nothing.
+
+
+//higher order functions::
+function callme(){ 
+    let f = function(){
+        console.log("first")
+    };
+    console.log();
+    return f;
+}
+
+callme()();
+
+
+let result = callme();
+console.log(typeof result);
+result();
+callme();
+
+let result=callme();
+    console.log(result);
+
+
+function learning(){
+     function f (){
+        console.log("second");
+    };
+    return f;
+}
+let val = learning();
+console.log(typeof val);
+val();
+
+function val5(){
+    function f (a,b){
+        return a+b;
+    }
+    return f;
+}
+// console.log(val5()(4,3));
+let val = val5();
+console.log(val(2,4));
+
+
+
+
+
+ function speak(){
+    function f(){
+        console.log("second type");
+    };
+   return f;
+}
+let val1 = speak();
+val1();
+ 
+
+
+function speak(){
+    function f(a,b){
+     return a+b;
+    }
+    return f;
+
+}
+console.log(speak()(4,7));
+
+
+
+
+
+  
+
+
+
