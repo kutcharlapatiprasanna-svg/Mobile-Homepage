@@ -425,13 +425,10 @@ function speak(){
     return f;
 
 }
-console.log(speak()(4,7));
+console.log(speak()(4,7))
+let y=100;
 
-
-
-
-
-  
+  console.log(prasanna);
 
 
 
