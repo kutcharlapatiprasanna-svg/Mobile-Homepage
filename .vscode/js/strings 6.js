@@ -277,3 +277,40 @@ regular expressions: */
     // console.log(str4.match(regexp));
     let regexp = /ra?/g;
     console.log(str4.match(regexp));
+/ let regx = /hello/i
+    // let result=regx.test("Hello Hellojavascript");
+    // console.log(result);
+
+    // let str = "3894579837"//10
+    let regular_expression = /^[0-9]{10}$/
+    let result =regular_expression.test("8945879889");
+    console.log(result);
+
+    // for ex: nen h tho start ayye word undho ledho teliyaali
+    let re = /^h/
+    let result2 = re.test("ello");
+    console.log(result2);
+
+    // ending kaavaali
+
+ let reg = /h$/
+    let result3 = reg.test("elloh");
+    console.log(result3);
+    
+
+// exec method manaki array lo aa manam ichhini dhaani and some extra information istundhi
+
+let reg1 = /hello/g;
+let rs = reg1.exec("hello prasannna javascript hello");
+console.log(rs);
+console.log(rs.index);
+
+ rs = reg1.exec("hello prasannna javascript hello");
+console.log(rs);
+console.log(rs.index);//27
+
+ rs = reg1.exec("hello prasannna javascript hello");
+console.log(rs);
+console.log(rs.index);
+
+ 
