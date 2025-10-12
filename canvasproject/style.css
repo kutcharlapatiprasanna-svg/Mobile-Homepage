@@ -1,0 +1,87 @@
+/* //DEFAULT MARGINS AND PADDINGS REMOVE FOR EVER ELEMENT */
+*{ 
+    margin: 0;
+    padding: 0;
+}
+
+/* Hides any content that exceeds the boundaries of the container. */
+#root{
+    
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position:relative;
+} 
+
+#canvas{
+    /* border: 2px solid red; */
+}
+
+#top{
+    border: 2px solid green;
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+     padding: 10px;
+  
+}
+#top > .options{
+    background-color: #fff;
+     display: flex;
+    align-items: center; 
+    gap: 10px;
+    border-radius: 6px;
+    padding: 4px 10px;
+    /* border: 1px solid #ededed; */
+    padding-right: 700px;
+    /* border: 1px solid #ededed; */
+  
+}
+
+.menu{
+    background-color: #ECECF3;
+    border-radius: 4px;
+   
+}
+
+
+
+
+#top button {
+    /* background-color: transparent; */
+    border: none;
+    padding: 4px 6px;
+    /* border-radius: 10px; */
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 15px;
+}
+
+#top button:hover{
+   background-color: blueviolet; 
+   border-radius: 4px;
+}
+/* .options{
+     border: 1px solid #ededed;
+     display: flex;
+     align-items: center;
+} */
+
+
+
+
+
+.options{
+    padding-right: 700px;
+}
+
+#bottom{
+    border: 2px solid rebeccapurple;
+    position: absolute;
+    z-index: 100    ;
+    left: 20px;
+    bottom: 20px;
+}
