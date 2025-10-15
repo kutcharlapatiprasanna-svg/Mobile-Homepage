@@ -1,11 +1,16 @@
 /* //DEFAULT MARGINS AND PADDINGS REMOVE FOR EVER ELEMENT */
-*{ 
+
+
+
+
+/* //DEFAULT MARGINS AND PADDINGS REMOVE FOR EVER ELEMENT */
+/* *{ 
     margin: 0;
     padding: 0;
-}
+} */
 
 /* Hides any content that exceeds the boundaries of the container. */
-#root{
+/* #root{
     
     width: 100vw;
     height: 100vh;
@@ -13,8 +18,8 @@
     position:relative;
 } 
 
-#canvas{
-    /* border: 2px solid red; */
+#canvas{ */
+    /* border: 2px solid red;
 }
 
 #top{
@@ -34,12 +39,12 @@
     align-items: center; 
     gap: 10px;
     border-radius: 6px;
-    padding: 4px 10px;
+    padding: 4px 10px; */
     /* border: 1px solid #ededed; */
-    padding-right: 700px;
+    /* padding-right: 700px; */
     /* border: 1px solid #ededed; */
   
-}
+/* }
 
 .menu{
     background-color: #ECECF3;
@@ -47,23 +52,23 @@
    
 }
 
+ */
 
 
-
-#top button {
+/* #top button {
     /* background-color: transparent; */
-    border: none;
-    padding: 4px 6px;
+    /* border: none;
+    padding: 4px 6px; */
     /* border-radius: 10px; */
-    cursor: pointer;
+    /* cursor: pointer;
     background-color: transparent;
     font-size: 15px;
-}
+} */
 
-#top button:hover{
-   background-color: blueviolet; 
+/* #top button:hover{ */
+   /* background-color: blueviolet; 
    border-radius: 4px;
-}
+} */
 /* .options{
      border: 1px solid #ededed;
      display: flex;
@@ -74,7 +79,7 @@
 
 
 
-.options{
+/* .options{
     padding-right: 700px;
 }
 
@@ -84,4 +89,61 @@
     z-index: 100    ;
     left: 20px;
     bottom: 20px;
+} */ 
+
+*{
+    margin: 0;
+    padding: 0;
 }
+
+
+#canvas{
+  border: 2px solid green;
+}
+
+#top{
+    border: 2px solid green;
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    padding: 10px;
+   
+}
+
+
+#top > .options{
+    background-color: #fff;
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+    border-radius: 6px;
+    padding: 4px 10px; 
+    border: 1px solid #ededed;
+    box-shadow: 2px2px 6px #ededed;
+    
+}
+
+.menu{
+    background-color: #ECECF3;
+    border-radius: 4px;
+   
+}
+
+#top button {
+     background-color: transparent;
+    border: none;
+    padding: 4px 6px; 
+    border-radius: 10px; 
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 16px;
+} 
+
+
+ #top button:hover{ 
+    background-color: blueviolet; 
+   border-radius: 4px;
+} 

@@ -13,19 +13,19 @@ canvas.height = window.innerHeight;
 // first we need to begin the path
 
 const c = canvas.getContext("2d");
-// /* c.beginPath();
-// c.moveTo(200,300);
-// c.lineTo(400,100);
-// c.strokeStyle="red";
-// c.lineWidth="10";
-// c.globalAlpha=0.2;
-// c.stroke();//static function draws the line with black clor from p1 to p2
-// c.closePath();
+ c.beginPath();
+c.moveTo(200,300);
+c.lineTo(400,100);
+c.strokeStyle="red";
+c.lineWidth="10";
+c.globalAlpha=0.2;
+c.stroke();//static function draws the line with black clor from p1 to p2
+c.closePath();
  
 
 // hard coded lines
 
-/* function multplelines(p1,p2,color,thickness){
+function multplelines(p1,p2,color,thickness){
    c.beginPath();
    c.moveTo(p1.x,p1.y);
    c.lineTo(p1.x,p2.y);
@@ -36,11 +36,11 @@ const c = canvas.getContext("2d");
 
 }
 multplelines({x:100,y:50},{x:90,y:200},"red",1);
-multplelines({x:10,y:950},{x:900,y:209},"red",1); */
+multplelines({x:10,y:950},{x:900,y:209},"red",1); 
 
 // dynamic code 
 
-/* function onMouseDown(event) {
+function onMouseDown(event) {
     console.log(event);
     let { clientX:x, clientY:y} = event;
     c.beginPath();
@@ -59,14 +59,14 @@ function onMouseUp(event) {
 
 canvas.addEventListener("mousedown", onMouseDown);
 canvas.addEventListener("mouseup", onMouseUp);
- */
+
 
 
 // CanvasRenderingContext2D object.
 // these are methods execpt strokeStyle lineWidth because these two properties for stroke we have to set for values .
 // continues lines.
 
-/* c.beginPath();
+c.beginPath();
 c.strokeStyle="red";
 c.lineWidth = 3;
 c.moveTo(100,200);
@@ -79,7 +79,7 @@ c.lineTo(20,20);
 c.lineWidth = 2;
 c.strokeStyle = "green";
 c.stroke();
- */
+
 
 //free hand drawing
 canvas.addEventListener("mousedown",onMouseDown);
@@ -99,3 +99,7 @@ function onMouseUp(){
     console.log("mouseup");
     canvas.addEventListener("mousemove",onMouseMove);
 }
+
+
+
+
