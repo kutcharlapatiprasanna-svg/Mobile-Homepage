@@ -1,9 +1,9 @@
-/* //DEFAULT MARGINS AND PADDINGS REMOVE FOR EVER ELEMENT */
+/* //DEFAULT MARGINS AND PADDINGS REMOVE FOR EVER ELEMENT
 
 
 
 
-/* //DEFAULT MARGINS AND PADDINGS REMOVE FOR EVER ELEMENT */
+/* //DEFAULT MARGINS AND PADDINGS REMOVE FOR EVERy ELEMENT */
 /* *{ 
     margin: 0;
     padding: 0;
@@ -91,7 +91,7 @@
     bottom: 20px;
 } */ 
 
-*{
+/* *{
     margin: 0;
     padding: 0;
 }
@@ -146,4 +146,94 @@
  #top button:hover{ 
     background-color: blueviolet; 
    border-radius: 4px;
-} 
+}  */ 
+
+ 
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+#root{
+     width: 100vw;
+     height: 100vh ;
+    overflow: hidden;
+    position: relative;
+}
+
+
+#canvas{
+    /* border: 2px solid red ;
+    background-color: blue ; */
+    /* cursor:    */
+
+}
+
+#top{
+   /* border: 2px solid red;  */
+   position: absolute;
+    width: 100vw; 
+   display: flex;
+   flex-direction: row;
+   align-items: center; 
+   justify-content: space-between;
+   z-index: 10;
+   padding: 10px;
+   
+}
+#top > .options{
+background-color: #fff;
+border: 2px solid #ededed;
+align-items: center;
+gap: 10px;
+border-radius: 10 px;
+padding: 4px 20px;
+box-shadow: 2px 2px 6px #ececec;
+}
+
+.menu{
+ background-color: #ececec;
+ border-radius: 4px;
+}
+
+.btn{
+    background-color: #ededed;
+    border: none;
+    padding: 4px 6px;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 16px !important;
+}
+
+
+.btn:hover{
+    background-color: gray;
+
+}
+
+ .active{
+    background-attachment:black;
+    border-radius: 4px;
+    color: blue;
+ }
+
+#bottom{
+    border: 2px soli red;
+    position: absolute;
+    z-index: 10;
+    left: 20px;
+    bottom: 20px;
+}
+
+#bottom >.options{
+background-color:#ededed ;
+padding: 4px 10px;
+border-radius: 5px;
+}
+
+/* //how to make the drawiing */
