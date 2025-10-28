@@ -1,11 +1,11 @@
 const pencil = document.getElementById("pencil");
 let isPencilActive = false //initially the pencil is inactive
 
- const coloPicker = document.getElementById("color-picker")
+//  const colorPicker = document.getElementById("color-picker")
 
- coloPicker.addEventListener("change",()=>{
-   drawingColor = coloPicker.value ;
- })
+//  colorPicker.addEventListener("change",()=>{
+//    drawingColor = colorPicker.value ;
+//  })
 
 function onpencilclick(){
     pencil.classList.toggle("active");
@@ -15,7 +15,7 @@ function onpencilclick(){
         // console.log(coloPicker.value)
         // drawingColor=coloPicker.value ;
          canvas.style.cursor="crosshair";
-        canvas.addEventListener("mousedown",onmousedown)
+        canvas.addEventListener("mousedown",onmousedown);
     }
     else{
         canvas.style.cursor="auto";
