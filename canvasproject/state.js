@@ -15,7 +15,7 @@ const formState = {
 const actions = {
     freehand: false,
     rectangle: false,
-    earaser: false,
+    eraser: false,
     circle: false
 }
 

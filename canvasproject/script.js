@@ -113,127 +113,125 @@
 // // we need to remove mouse move listner after mouseup
 
 // /* canvas.addEventListener("mousedown",onmousedown)
-// let previousvalue = null;
-// function onmousedown(){
-//     console.log("mouse down");
-//     canvas.addEventListener("mousemove",onmousemove);
-//     canvas.addEventListener("mouseup",onmouseup);
-// }
-// function onmousemove(){
-//     console.log("mousemove")
-// }
-// function onmouseup(){
-//     console.log("mouse up");
-//     // we need to remove mouse move listner after mouseup
-//     canvas.removeEventListener("mousemove",onmousemove)
+let previousvalue = null;
+function onmousedown(){
+    console.log("mouse down");
+    canvas.addEventListener("mousemove",onmousemove);
+    canvas.addEventListener("mouseup",onmouseup);
+}
+function onmousemove(){
+    console.log("mousemove")
+}
+function onmouseup(){
+    console.log("mouse up");
+    // we need to remove mouse move listner after mouseup
+    canvas.removeEventListener("mousemove",onmousemove)
 
-// } */
+} 
 
 // // you guys can see positions actually for events when triggring 
-// /*   canvas.addEventListener("mousedown",onmousedown)
+   canvas.addEventListener("mousedown",onmousedown)
 // let previousvalue = null;
-// function onmousedown(e){
-//   console.log("mouse down" , e.clientX,e.clientY);
-//   canvas.addEventListener("mousemove",onmousemove);
-//   canvas.addEventListener("mouseup",onmouseup);
-// }
-// function onmousemove(e){
-//   console.log("mousemove" , e.clientX,e.clientY)
-// }
-// function onmouseup(e){
-//   console.log("mouse up", e.clientX,e.clientY);
-//     canvas.removeEventListener("mousemove",onmousemove)
-// }
-// */
-// // free hand now
-// //for the first time  inide this previous position 
-// //  canvas.addEventListener("mousedown",onmousedown)
-// let pathCount = 0;
-// let drawingHistory = [];
+function onmousedown(e){
+  console.log("mouse down" , e.clientX,e.clientY);
+  canvas.addEventListener("mousemove",onmousemove);
+  canvas.addEventListener("mouseup",onmouseup);
+}
+function onmousemove(e){
+  console.log("mousemove" , e.clientX,e.clientY)
+}
+function onmouseup(e){
+  console.log("mouse up", e.clientX,e.clientY);
+    canvas.removeEventListener("mousemove",onmousemove)
+}
 
-// let drawingColor = "red";
-// let previousPosition = null;
-// const arr = [];
-// let initialCount = 0;
+// free hand now
+//for the first time  inide this previous position 
+ canvas.addEventListener("mousedown",onmousedown)
+let pathCount = 0;
+let drawingHistory = [];
 
-// let optitions = {
-//     isFreeHandDrawing: true,
-//     isRectangleDrawing: false,
-// }
+let drawingColor = "red";
+let previousPosition = null;
+const arr = [];
+let initialCount = 0;
 
-// // let pathCount = 0;
+let optitions = {
+    isFreeHandDrawing: true,
+    isRectangleDrawing: false,
+}
 
-// function enableRectDrawing() {
-//  optitions.isFreeHandDrawing = false;
-//     optitions.isRectangleDrawing = true;
-//     console.log(optitions);
-//     //  let optitions = {
-//     // isFreeHandDrawing: false,
-//     // isRectangleDrawing: true,
-// }
+
+function enableRectDrawing() {
+ optitions.isFreeHandDrawing = false;
+    optitions.isRectangleDrawing = true;
+    console.log(optitions);
+  let optitions = {
+ isFreeHandDrawing: false,
+    isRectangleDrawing: true,
+}
     
-// //     console.log(optitions);
-// // }
+     console.log(optitions);
+ }
+
+function onmousedown(e) {
+    previousPosition = [e.clientX, e.clientY];
+c.stroke();
+    c.strokeStyle = drawingColor;
+    c.lineWidth = 2;
+    initialCount = pathCount;
+    canvas.addEventListener("mousemove", onmousemove);
+    canvas.addEventListener("mouseup", onmouseup);
+}
+function onmousemove(e) {
+    let currentposition = [e.clientX, e.clientY]
+    if (optitions.isFreeHandDrawing) {
+        c.beginPath();
+        c.moveTo(...previousPosition);
+        c.lineTo(...currentposition);
+       c.strokeStyle="blue";
+        c.stroke();
+        c.closePath();
+        previousPosition =  currentposition;
+    }
+ drawRectangle();
+
+    if (optitions.isRectangleDrawing) {
+        drawRectangle(currentposition);
+    }
 
 
-// function onmousedown(e) {
-//     previousPosition = [e.clientX, e.clientY];
-//     //   c.stroke();
-//     c.strokeStyle = drawingColor;
-//     c.lineWidth = 2;
-//     initialCount = pathCount;
-//     canvas.addEventListener("mousemove", onmousemove);
-//     canvas.addEventListener("mouseup", onmouseup);
-// }
-// function onmousemove(e) {
-//     let currentposition = [e.clientX, e.clientY]
-//     if (optitions.isFreeHandDrawing) {
-//         c.beginPath();
-//         c.moveTo(...previousPosition);
-//         c.lineTo(...currentposition);
-//         //    c.strokeStyle="blue";
-//         c.stroke();
-//         c.closePath();
-//         previousPosition =  currentposition;
-//     }
-//     // drawRectangle();
-
-//     if (optitions.isRectangleDrawing) {
-//         drawRectangle(currentposition);
-//     }
+}
+function drawRectangle(currentposition) {
+    if (initialCount !== pathCount) {
+        c.putImageData(drawingHistory[initialCount - 1],0,0);
+        pathCount = initialCount;
+    }
+    let width = currentposition[0] - previousPosition[0];
+    let height = currentposition[1] - previousPosition[1];
+    c.strokeRect(previousPosition[0], previousPosition[1], width, height);
+    drawingHistory.push(c.getImageData(0, 0, canvas.width, canvas.height));
+    pathCount++;
+} 
+ function onmouseup(e){
+    console.log("mouse up", e.clientX,e.clientY);
+       canvas.removeEventListener("mousemove",onmousemove)
 
 
-// }
-// function drawRectangle(currentposition) {
-//     if (initialCount !== pathCount) {
-//         c.putImageData(drawingHistory[initialCount - 1],0,0);
-//         pathCount = initialCount;
-//     }
-//     let width = currentposition[0] - previousPosition[0];
-//     let height = currentposition[1] - previousPosition[1];
-//     c.strokeRect(previousPosition[0], previousPosition[1], width, height);
-//     drawingHistory.push(c.getImageData(0, 0, canvas.width, canvas.height));
-//     pathCount++;
-// } 
-// // function onmouseup(e){
-// //     console.log("mouse up", e.clientX,e.clientY);
-// //       canvas.removeEventListener("mousemove",onmousemove)
+ }
 
 
-// // }
-
-
-// // firstly i made a click mousedown and then drawn something mouseup so when i made a click
-// //  i added a two event listenrs 1.mousemove and 2.mouseup.events
+// firstly i made a click mousedown and then drawn something mouseup so when i made a click
+//  i added a two event listenrs 1.mousemove and 2.mouseup.events
 
 
 
-// function onmouseup(e) {
-//     // console.log("mouse up", e.clientX,e.clientY);
-//     canvas.removeEventListener("mousemove", onmousemove);
-//     canvas.removeEventListener("mouseup", onmouseup);
-//     drawingHistory.push(c.getImageData(0, 0, canvas.width, canvas.height));
-//     pathCount++;
-// }
+function onmouseup(e) {
+    // console.log("mouse up", e.clientX,e.clientY);
+    canvas.removeEventListener("mousemove", onmousemove);
+    canvas.removeEventListener("mouseup", onmouseup);
+    drawingHistory.push(c.getImageData(0, 0, canvas.width, canvas.height));
+    pathCount++;
+}
 
 
